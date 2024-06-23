@@ -1,0 +1,18 @@
+{% extends 'ClasesUFC/padre.html' %}
+{% load static %}
+
+{% block ContenidoQueCambia %}
+
+<h1>INSCRIPCION</h1>
+
+<form action="" method="POST">{% csrf_token %}
+
+    <table>
+        {{ miformulario.as_table }}
+    </table>
+
+    <input type="submit" value="Enviar">
+
+</form>
+    
+{% endblock ContenidoQueCambia %}
